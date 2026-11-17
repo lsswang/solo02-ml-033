@@ -1,0 +1,176 @@
+{
+  "query": [
+    [
+      0,
+      0
+    ]
+  ],
+  "results": {
+    "format": "additive_visual_search_v1",
+    "query_regions": 1,
+    "top_k": 3,
+    "feasible_count": 4,
+    "insufficient_count": 0,
+    "ranking_basis": "additive dictionary reconstruction",
+    "codebook_digest": "c2beb68e24baef0cc37590c5ea80899eedd10d022a1b0c1f39cb299bffbc25ea",
+    "results": [
+      {
+        "id": "single_peak",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 2,
+        "query_regions": 1
+      },
+      {
+        "id": "solo_region",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 1,
+        "query_regions": 1
+      },
+      {
+        "id": "two_parts",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 2,
+        "query_regions": 1
+      }
+    ],
+    "all_feasible": [
+      {
+        "id": "single_peak",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 2,
+        "query_regions": 1
+      },
+      {
+        "id": "solo_region",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 1,
+        "query_regions": 1
+      },
+      {
+        "id": "two_parts",
+        "status": "ok",
+        "cost": 0.4319633411849402,
+        "mean_squared_cost": 0.4319633411849402,
+        "total_squared_cost": 0.4319633411849402,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.4319633411849402
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ],
+        "regions": 2,
+        "query_regions": 1
+      },
+      {
+        "id": "three_parts",
+        "status": "ok",
+        "cost": 2.4845081366216997,
+        "mean_squared_cost": 2.4845081366216997,
+        "total_squared_cost": 2.4845081366216997,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 2.4845081366216997
+          }
+        ],
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          2.4845081366216997
+        ],
+        "regions": 3,
+        "query_regions": 1
+      }
+    ],
+    "insufficient": []
+  }
+}

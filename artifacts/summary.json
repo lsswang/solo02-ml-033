@@ -1,0 +1,199 @@
+{
+  "query": [
+    [
+      0,
+      0
+    ],
+    [
+      0.5,
+      0
+    ]
+  ],
+  "ranking": [
+    {
+      "id": "two_parts",
+      "cost": 0.2340160573465776,
+      "region_indices": [
+        0,
+        1
+      ],
+      "pair_costs": [
+        0.4319633411849402,
+        0.036068773508214996
+      ]
+    },
+    {
+      "id": "single_peak",
+      "cost": 2.0854240369959864,
+      "region_indices": [
+        0,
+        1
+      ],
+      "pair_costs": [
+        0.4319633411849402,
+        3.7388847328070325
+      ]
+    },
+    {
+      "id": "three_parts",
+      "cost": 3.111696434714366,
+      "region_indices": [
+        0,
+        1
+      ],
+      "pair_costs": [
+        2.4845081366216997,
+        3.7388847328070325
+      ]
+    }
+  ],
+  "insufficient": [
+    {
+      "id": "solo_region",
+      "status": "insufficient_regions",
+      "reason": "fewer reconstructed regions than query regions",
+      "regions": 1,
+      "required": 2
+    }
+  ],
+  "single_region": {
+    "query": [
+      [
+        0,
+        0
+      ]
+    ],
+    "ranking": [
+      {
+        "id": "single_peak",
+        "cost": 0.4319633411849402,
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ]
+      },
+      {
+        "id": "solo_region",
+        "cost": 0.4319633411849402,
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ]
+      },
+      {
+        "id": "two_parts",
+        "cost": 0.4319633411849402,
+        "region_indices": [
+          0
+        ],
+        "pair_costs": [
+          0.4319633411849402
+        ]
+      }
+    ]
+  },
+  "model_change": {
+    "base_codebook_digest": "c2beb68e24baef0cc37590c5ea80899eedd10d022a1b0c1f39cb299bffbc25ea",
+    "alternate_codebook_digest": "4fa21a9c5e7835ea4d2583e6d26175becf9e5476f38ca26ade67ed2c051b113b",
+    "catalog_codes_changed": true,
+    "rankings_changed": true,
+    "base_ranking": [
+      {
+        "id": "two_parts",
+        "cost": 0.2340160573465776,
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.4319633411849402,
+          0.036068773508214996
+        ]
+      },
+      {
+        "id": "single_peak",
+        "cost": 2.0854240369959864,
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.4319633411849402,
+          3.7388847328070325
+        ]
+      },
+      {
+        "id": "three_parts",
+        "cost": 3.111696434714366,
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          2.4845081366216997,
+          3.7388847328070325
+        ]
+      }
+    ],
+    "alternate_ranking": [
+      {
+        "id": "two_parts",
+        "cost": 0.382069648857756,
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          0.10520693757800426
+        ]
+      },
+      {
+        "id": "single_peak",
+        "cost": 1.048221546515183,
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          1.437510732892858
+        ]
+      },
+      {
+        "id": "three_parts",
+        "cost": 2.1616541156685276,
+        "region_indices": [
+          1,
+          2
+        ],
+        "pair_costs": [
+          2.8857974984441976,
+          1.437510732892858
+        ]
+      }
+    ]
+  },
+  "training_objective": {
+    "total": 0.5386155223333545,
+    "data": 0.17899765114701716,
+    "ridge": 0.35961787118633737,
+    "lambda": 0.1
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "before": 3.25,
+      "after": 1.6470797720797723
+    },
+    {
+      "round": 2,
+      "before": 1.0020534279348379,
+      "after": 0.5386155223333545
+    }
+  ]
+}

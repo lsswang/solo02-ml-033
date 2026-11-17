@@ -1,0 +1,148 @@
+{
+  "format": "additive_visual_model_v1",
+  "codebooks": [
+    [
+      [
+        0.2743651011820427,
+        0.6098411959992388
+      ],
+      [
+        -0.17635490896787986,
+        -0.17233723118563782
+      ]
+    ],
+    [
+      [
+        0.43538939755978945,
+        0.449451269797636
+      ],
+      [
+        -0.337379205345626,
+        -0.011947304984034911
+      ]
+    ],
+    [
+      [
+        -1.0616184897760674,
+        0.13163181154976625
+      ],
+      [
+        1.159628681990231,
+        0.3058721532638343
+      ]
+    ]
+  ],
+  "layers": 3,
+  "codebook_size": 2,
+  "dim": 2,
+  "iterations": 2,
+  "ridge": 0.1,
+  "rounds": [
+    {
+      "round": 1,
+      "data_before_update": 1.75,
+      "ridge_before_update": 1.5,
+      "objective_before_update": 3.25,
+      "data_after_update": 1.3933290415662212,
+      "ridge_after_update": 0.253750730513551,
+      "objective_after_update": 1.6470797720797723
+    },
+    {
+      "round": 2,
+      "data_before_update": 0.7483026974212869,
+      "ridge_before_update": 0.253750730513551,
+      "objective_before_update": 1.0020534279348379,
+      "data_after_update": 0.17899765114701716,
+      "ridge_after_update": 0.35961787118633737,
+      "objective_after_update": 0.5386155223333545
+    }
+  ],
+  "final_codes": [
+    [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  ],
+  "image_errors": [
+    {
+      "image_index": 0,
+      "regions": 2,
+      "weight_per_region": 0.25,
+      "weighted_squared_error": 0.08081798152372405,
+      "mean_squared_error": 0.1616359630474481,
+      "codes": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "image_index": 1,
+      "regions": 3,
+      "weight_per_region": 0.16666666666666666,
+      "weighted_squared_error": 0.0981796696232931,
+      "mean_squared_error": 0.19635933924658622,
+      "codes": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "training_image_count": 2,
+  "training_region_counts": [
+    2,
+    3
+  ],
+  "objective": {
+    "total": 0.5386155223333545,
+    "data": 0.17899765114701716,
+    "ridge": 0.35961787118633737,
+    "lambda": 0.1
+  },
+  "code_count": 8
+}

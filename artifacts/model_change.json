@@ -1,0 +1,452 @@
+{
+  "query": [
+    [
+      0,
+      0
+    ],
+    [
+      0.5,
+      0
+    ]
+  ],
+  "top_k": 3,
+  "model": {
+    "format": "additive_visual_model_v1",
+    "codebooks": [
+      [
+        [
+          -0.004024376221686013,
+          0.3081522364033574
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -0.45130504771760405,
+          0.2713579395193748
+        ],
+        [
+          0.4472806714959181,
+          0.03679429688398324
+        ]
+      ],
+      [
+        [
+          1.2550304702771076,
+          -0.385190295504197
+        ],
+        [
+          -1.259054846498792,
+          0.6933425319075541
+        ]
+      ]
+    ],
+    "layers": 3,
+    "codebook_size": 2,
+    "dim": 2,
+    "iterations": 2,
+    "ridge": 0.1,
+    "rounds": [
+      {
+        "round": 1,
+        "data_before_update": 1.75,
+        "ridge_before_update": 1.5,
+        "objective_before_update": 3.25,
+        "data_after_update": 0.4298729819563153,
+        "ridge_after_update": 0.4266084995251662,
+        "objective_after_update": 0.8564814814814815
+      },
+      {
+        "round": 2,
+        "data_before_update": 0.41347637701804374,
+        "ridge_before_update": 0.4266084995251662,
+        "objective_before_update": 0.84008487654321,
+        "data_after_update": 0.17625603089587116,
+        "ridge_after_update": 0.4363115211335643,
+        "objective_after_update": 0.6125675520294355
+      }
+    ],
+    "final_codes": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "image_errors": [
+      {
+        "image_index": 0,
+        "regions": 2,
+        "weight_per_region": 0.25,
+        "weighted_squared_error": 0.03603298781433498,
+        "mean_squared_error": 0.07206597562866995,
+        "codes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "image_index": 1,
+        "regions": 3,
+        "weight_per_region": 0.16666666666666666,
+        "weighted_squared_error": 0.12180886722053699,
+        "mean_squared_error": 0.243617734441074,
+        "codes": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "training_image_count": 2,
+    "training_region_counts": [
+      2,
+      3
+    ],
+    "objective": {
+      "total": 0.5941533761684363,
+      "data": 0.15784185503487197,
+      "ridge": 0.4363115211335643,
+      "lambda": 0.1
+    },
+    "code_count": 8
+  },
+  "catalog": {
+    "format": "additive_visual_catalog_v1",
+    "codebooks": [
+      [
+        [
+          -0.004024376221686013,
+          0.3081522364033574
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -0.45130504771760405,
+          0.2713579395193748
+        ],
+        [
+          0.4472806714959181,
+          0.03679429688398324
+        ]
+      ],
+      [
+        [
+          1.2550304702771076,
+          -0.385190295504197
+        ],
+        [
+          -1.259054846498792,
+          0.6933425319075541
+        ]
+      ]
+    ],
+    "codebook_digest": "4fa21a9c5e7835ea4d2583e6d26175becf9e5476f38ca26ade67ed2c051b113b",
+    "layers": 3,
+    "codebook_size": 2,
+    "dim": 2,
+    "images": {
+      "single_peak": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "two_parts": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "three_parts": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "solo_region": [
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "region_counts": {
+      "single_peak": 2,
+      "two_parts": 2,
+      "three_parts": 3,
+      "solo_region": 1
+    }
+  },
+  "results": {
+    "format": "additive_visual_search_v1",
+    "query_regions": 2,
+    "top_k": 3,
+    "feasible_count": 3,
+    "insufficient_count": 1,
+    "ranking_basis": "additive dictionary reconstruction",
+    "codebook_digest": "4fa21a9c5e7835ea4d2583e6d26175becf9e5476f38ca26ade67ed2c051b113b",
+    "results": [
+      {
+        "id": "two_parts",
+        "status": "ok",
+        "cost": 0.382069648857756,
+        "mean_squared_cost": 0.382069648857756,
+        "total_squared_cost": 0.764139297715512,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.6589323601375078
+          },
+          {
+            "query_index": 1,
+            "region_index": 1,
+            "cost": 0.10520693757800426
+          }
+        ],
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          0.10520693757800426
+        ],
+        "regions": 2,
+        "query_regions": 2
+      },
+      {
+        "id": "single_peak",
+        "status": "ok",
+        "cost": 1.048221546515183,
+        "mean_squared_cost": 1.048221546515183,
+        "total_squared_cost": 2.096443093030366,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.6589323601375078
+          },
+          {
+            "query_index": 1,
+            "region_index": 1,
+            "cost": 1.437510732892858
+          }
+        ],
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          1.437510732892858
+        ],
+        "regions": 2,
+        "query_regions": 2
+      },
+      {
+        "id": "three_parts",
+        "status": "ok",
+        "cost": 2.1616541156685276,
+        "mean_squared_cost": 2.1616541156685276,
+        "total_squared_cost": 4.323308231337055,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 1,
+            "cost": 2.8857974984441976
+          },
+          {
+            "query_index": 1,
+            "region_index": 2,
+            "cost": 1.437510732892858
+          }
+        ],
+        "region_indices": [
+          1,
+          2
+        ],
+        "pair_costs": [
+          2.8857974984441976,
+          1.437510732892858
+        ],
+        "regions": 3,
+        "query_regions": 2
+      }
+    ],
+    "all_feasible": [
+      {
+        "id": "two_parts",
+        "status": "ok",
+        "cost": 0.382069648857756,
+        "mean_squared_cost": 0.382069648857756,
+        "total_squared_cost": 0.764139297715512,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.6589323601375078
+          },
+          {
+            "query_index": 1,
+            "region_index": 1,
+            "cost": 0.10520693757800426
+          }
+        ],
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          0.10520693757800426
+        ],
+        "regions": 2,
+        "query_regions": 2
+      },
+      {
+        "id": "single_peak",
+        "status": "ok",
+        "cost": 1.048221546515183,
+        "mean_squared_cost": 1.048221546515183,
+        "total_squared_cost": 2.096443093030366,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 0,
+            "cost": 0.6589323601375078
+          },
+          {
+            "query_index": 1,
+            "region_index": 1,
+            "cost": 1.437510732892858
+          }
+        ],
+        "region_indices": [
+          0,
+          1
+        ],
+        "pair_costs": [
+          0.6589323601375078,
+          1.437510732892858
+        ],
+        "regions": 2,
+        "query_regions": 2
+      },
+      {
+        "id": "three_parts",
+        "status": "ok",
+        "cost": 2.1616541156685276,
+        "mean_squared_cost": 2.1616541156685276,
+        "total_squared_cost": 4.323308231337055,
+        "assignment": [
+          {
+            "query_index": 0,
+            "region_index": 1,
+            "cost": 2.8857974984441976
+          },
+          {
+            "query_index": 1,
+            "region_index": 2,
+            "cost": 1.437510732892858
+          }
+        ],
+        "region_indices": [
+          1,
+          2
+        ],
+        "pair_costs": [
+          2.8857974984441976,
+          1.437510732892858
+        ],
+        "regions": 3,
+        "query_regions": 2
+      }
+    ],
+    "insufficient": [
+      {
+        "id": "solo_region",
+        "status": "insufficient_regions",
+        "reason": "fewer reconstructed regions than query regions",
+        "regions": 1,
+        "required": 2
+      }
+    ]
+  }
+}
