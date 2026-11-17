@@ -1,0 +1,2 @@
+# Compressed local visual representations
+Python 3.11, NumPy and SciPy. Run `python demo.py`. Input vectors are small already extracted local visual features. Existing sequential residual quantization and independent nearest-region retrieval run as an ordinary baseline. The task asks for shared additive dictionary learning and distinct-region object coverage. The query-side catalog consists only of codebooks and code tuples, not original visual vectors. Full decoding and full image scanning are allowed.
